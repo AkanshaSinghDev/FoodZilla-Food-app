@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackwhite"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/aclonica"
+        android:padding="5dp"
+        android:text=" MENU"
+        android:textAlignment="center"
+        android:textColor="@color/colorlight"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="36dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/aclonica"
+        android:onClick="yes"
+        android:overScrollMode="never"
+        android:padding="15dp"
+        android:text="Confirm Order"
+        android:textColor="@android:color/black" />
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rview"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/shoppingcart"
+
+        android:onClick="Cart"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_alignTop="@+id/imageButton"
+        android:fontFamily="@font/aclonica"
+        android:padding="5dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/totalcost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/aclonica"
+        android:padding="2dp"
+        android:textColor="@color/colorlight"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
+
